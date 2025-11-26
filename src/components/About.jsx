@@ -1,9 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-function Home() {
+import{Link} from 'react-router-dom'
+function About() {
   return (
     <>
-    <div className='nav-section'>
+         <div className='nav-section'>
         <img src="https://www.booktime.org/images/Logo_en.svg" alt="" />
       <nav>
         <Link to="/">Home</Link>
@@ -21,5 +21,4 @@ function Home() {
   )
 }
 
-export default Home
-
+export default About
