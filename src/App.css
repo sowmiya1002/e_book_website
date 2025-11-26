@@ -1,42 +1,39 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.nav-section{
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 2px 3px 1px 2px ;
+  backdrop-filter: blur(78px);
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+img{
+  width: 150px;
+  height: 60px;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+.nav-item1{
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ margin-top: 20px;
+display: flex;
+flex-direction: row;
+gap: 30px;
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
 }
-
-.card {
-  padding: 2em;
+nav .menu{
+  text-decoration: none;
+  color: black;
 }
+.nav-item2{
+  
+  margin-top: 20px;
+gap: 30px;
+}
+input{
+ width: 300px;
+ margin-right: 10px;
 
-.read-the-docs {
-  color: #888;
-} */
+
+
+}

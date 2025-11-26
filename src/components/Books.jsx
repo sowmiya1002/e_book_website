@@ -5,13 +5,13 @@ function Books() {
     <>
    <div className='nav-section'>
         <img src="https://www.booktime.org/images/Logo_en.svg" alt="" />
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/Books">Books</Link>
-        <Link to="/Favorites">Favorites</Link>
-        <Link to="/About">AboutUs</Link>
+      <nav className='nav-item1'>
+       <Link className='menu' to="/">Home</Link>
+              <Link className='menu' to="/Books">Books</Link>
+              <Link className='menu' to="/Favorites">Favorites</Link>
+              <Link className='menu' to="/About">AboutUs</Link>
       </nav>
-     <nav>
+     <nav className='nav-item2'>
         <input type="text"placeholder='search book' />
         <button><i class="fa-solid fa-magnifying-glass"></i></button>
          <i class="fa-regular fa-user"></i>
