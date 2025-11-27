@@ -4,7 +4,7 @@ function Favorites() {
   return (
     <>
        <div className='nav-section'>
-            <img src="https://www.booktime.org/images/Logo_en.svg" alt="" />
+            <img className='logo' src="https://www.booktime.org/images/Logo_en.svg" alt="" />
           <nav className='nav-item1'>
            <Link className='menu' to="/">Home</Link>
                   <Link className='menu' to="/Books">Books</Link>
@@ -13,11 +13,12 @@ function Favorites() {
           </nav>
          <nav className='nav-item2'>
             <input type="text"placeholder='search book' />
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button>
+              <i class="fa-solid fa-magnifying-glass"></i></button>
              <i class="fa-regular fa-user"></i>
          </nav>
         </div>
-          <h1>empty</h1>
+          <h4>empty</h4>
     </>
   )
 }
