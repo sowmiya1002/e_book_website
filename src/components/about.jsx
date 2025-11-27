@@ -7,8 +7,7 @@ export default function About() {
     margin: "auto",
     padding: "20px",
     color: "black",
-    
-  };
+ };
 
   const sectionTitle = {
     fontSize: "30px",
@@ -254,7 +253,7 @@ export default function About() {
           style={{
             position: "absolute",
             left: "20px",
-            bottom: "-30px",
+            bottom: "-0px",
             width: "120px",
             height: "90px",
             padding: "10px",
