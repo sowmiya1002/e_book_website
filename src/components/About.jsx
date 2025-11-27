@@ -4,7 +4,7 @@ function About() {
   return (
     <>
          <div className='nav-section'>
-        <img src="https://www.booktime.org/images/Logo_en.svg" alt="" />
+        <img className='logo' src="https://www.booktime.org/images/Logo_en.svg" alt="" />
       <nav className='nav-item1'>
        <Link className='menu' to="/">Home</Link>
               <Link className='menu' to="/Books">Books</Link>
