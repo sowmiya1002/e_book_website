@@ -15,7 +15,7 @@ export default function About() {
     color: "black",
   };
 
-  const paragraph = {
+  const paragraph = {GI
     lineHeight: "1.7",
     marginBottom: "12px",
     fontSize: "20px",
