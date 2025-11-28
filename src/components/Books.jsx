@@ -23,7 +23,7 @@ function Books() {
  
     
   <section className="book-section">
-      <h2>BOOKS time</h2> 
+      <h2>BOOKS</h2> 
   {/* <div className="book-heading">
     <h3>Animal Greetings</h3>
    

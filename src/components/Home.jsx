@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-
+import "./Home.css"
 
 
 function Home() {
@@ -102,9 +102,50 @@ function Home() {
     </div>
 
   </div>
-  
+  {/* 3 */}
+
+   <div className="book-heading">
+    <h3>Sleepy Stories</h3>
+    <a href="/Books" className="view-all">View All →</a>
+  </div>
+
+  <div className="book-container">
+
+    <div className="book-card">
+      <a href="/Bookinfo">
+      <img src="https://downloads.booktime.org/covers/en/20315604_en.webp?v=f997f774bce8f45aq5cab9565712d3dc" alt="" />
+      </a>
+    </div>
+
+    <div className="book-card">
+      <a href="/Bookinfo">
+      <img src="https://downloads.booktime.org/covers/en/73012729_en.webp?v=f997f774bce8f45aq5cab9565712d3dc" alt="" />
+     </a>
+    </div>
+
+    <div className="book-card">
+      <a href="/Bookinfo">
+      <img src="https://downloads.booktime.org/covers/en/14617289_en.webp?v=f997f774bce8f45aq5cab9565712d3dc" alt="" />
+      </a>
+    </div>
+
+    <div className="book-card">
+      <a href="/Bookinfo">
+      <img src="https://downloads.booktime.org/covers/en/68710264_en.webp?v=f997f774bce8f45aq5cab9565712d3dc" alt="" />
+      </a>
+    </div>
+
+  </div>
 </section>
 
+{/* download-content */}
+
+<section className='down-content'>
+  <h1>Download Booktime</h1>
+  <p>Let your children discover the joy of reading and unleash <br /> their imagination in a world of exciting stories and enjoyable <br /> books in different languages on topics that suit their interests and ages.</p>
+<img src="https://apps.apple.com/us/app/id6695740177" alt="" />
+<img src="https://play.google.com/store/apps/details?id=org.booktime" alt="" />
+</section>
     </>
     
   )

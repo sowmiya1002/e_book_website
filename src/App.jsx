@@ -6,7 +6,8 @@ import {Route, Routes, BrowserRouter} from 'react-router-dom'
 import Home from './components/Home'
 import Books from './components/Books.Jsx'
 import Favorites from './components/Favorites'
-import About from './components/about'
+import About from './components/About'
+import Bookinfo from './components/Bookinfo'
 
 
 
@@ -23,6 +24,7 @@ function App() {
        <Route path='/Books' element={<Books/>}></Route>
        <Route path='/Favorites' element={<Favorites/>}></Route>
        <Route path='/About' element={<About/>}></Route>
+        <Route path='/Bookinfo' element={<Bookinfo/>}></Route>
       </Routes>
       </BrowserRouter>
     </>

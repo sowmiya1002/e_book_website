@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.book-info{
+display: flex;
+gap: 50px;
+width: 900px;
+height: 600px;
+margin: auto;
+padding-top: 50px;
+}
+
+
