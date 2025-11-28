@@ -1,24 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
+
 
 export default function About() {
   const container = {
     maxWidth: "1200px",
-    margin: "auto",
+    margin: " auto",
     padding: "20px",
     color: "black",
-  };
+    
+};
 
-  const sectionTitle = {
+const sectionTitle = {
     fontSize: "30px",
     marginBottom: "10px",
     color: "black",
+    marginTop:"200px",
   };
 
   const paragraph = {
     lineHeight: "1.7",
     marginBottom: "12px",
     fontSize: "20px",
+    
   };
 
   const impactTitle = {
@@ -153,65 +158,17 @@ export default function About() {
     transform: "rotate(-10deg)",
   };
 
-  const footer = {
-    backgroundColor: "#f0f0f0",
-    padding: "40px 20px",
-    marginTop: "50px",
-    display: "flex",
-    justifyContent: "space-between",
-    flexWrap: "wrap",
-  };
-
-  const footerLeft = {
-    maxWidth: "350px",
-    marginBottom: "20px",
-  };
-
-  const footerLogo = {
-    display: "flex",
-    alignItems: "center",
-    gap: "10px",
-    marginBottom: "10px",
-  };
-
-  const footerText = {
-    fontSize: "20px",
-    lineHeight: 1.6,
-  };
-
-  const socialRow = {
-    display: "flex",
-    gap: "15px",
-    marginTop: "10px",
-  };
-
-  const socialIcon = {
-    width: "22px",
-    cursor: "pointer",
-  };
-
-  const footerMenu = {
-    display: "flex",
-    gap: "40px",
-    flexWrap: "wrap",
-  };
-
-  const menuColumn = {
-    display: "flex",
-    flexDirection: "column",
-    gap: "6px",
-  };
-
-  const menuItem = {
-    fontSize: "20px",
-    cursor: "pointer",
-  };
-
+  
   return (
     <>
-      <div className="nav-section">
-        <img src="https://www.booktime.org/images/Logo_en.svg" alt="" />
 
+    
+      <div className="nav-section">
+        <img
+          className="logo"
+          src="https://www.booktime.org/images/Logo_en.svg"
+          alt=""
+        />
         <nav className="nav-item1">
           <Link className="menu" to="/">
             Home
@@ -226,13 +183,12 @@ export default function About() {
             AboutUs
           </Link>
         </nav>
-
         <nav className="nav-item2">
           <input type="text" placeholder="search book" />
           <button>
-            <i className="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
           </button>
-          <i className="fa-regular fa-user"></i>
+          <i class="fa-regular fa-user"></i>
         </nav>
       </div>
 
@@ -241,10 +197,12 @@ export default function About() {
           width: "100%",
           background: "linear-gradient(90deg, #a39e9eff, #a6c6ffff)",
           padding: "30px 0",
-          position: "relative",
+          position: "absolute",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          marginTop:"65px",
+          height:"50px",
         }}
       >
         <img
@@ -266,7 +224,6 @@ export default function About() {
             fontWeight: "500",
             color: "#333",
             textAlign: "center",
-            
           }}
         >
           About Us
@@ -387,52 +344,9 @@ export default function About() {
           <img src="playstore" alt="Play Store" style={storeImg} />
         </div>
 
-        <div style={imageArea}>
-          <img src="" style={mobileImg} />
-          
-        </div>
+        
       </div>
-
-      <div style={footer}>
-        <div style={footerLeft}>
-          <div style={footerLogo}>
-            <img
-              src="https://www.booktime.org/images/Logo_en.svg"
-              alt="Booktime Logo"
-              style={{ width: "150px" }}
-            />
-            
-          </div>
-
-          <p style={footerText}>
-            Booktime is an initiative of the Hindawi Foundation, a registered
-            charity in England and Wales. York House, 41 Sheet Street, Windsor
-            SL4 1DD.
-          </p>
-
-          <div style={socialRow}>
-            <img src="facebook" alt="fb" style={socialIcon} />
-            <img src="instagram" alt="insta" style={socialIcon} />
-            <img src="twitter" alt="twitter" style={socialIcon} />
-          </div>
-        </div>
-
-        <div style={footerMenu}>
-          <div style={menuColumn}>
-            <span style={menuItem}>Home</span>
-            <span style={menuItem}>Books</span>
-            <span style={menuItem}>Series</span>
-            <span style={menuItem}>Contributors</span>
-          </div>
-
-          <div style={menuColumn}>
-            <span style={menuItem}>About Us</span>
-            <span style={menuItem}>Donate</span>
-            <span style={menuItem}>Privacy Policy</span>
-            <span style={menuItem}>Terms & Conditions</span>
-          </div>
-        </div>
-      </div>
+      <Footer/>
     </>
   );
 }
