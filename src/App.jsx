@@ -3,11 +3,13 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import {Route, Routes, BrowserRouter} from 'react-router-dom'
+import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import Home from './components/Home'
 import Books from './components/Books.Jsx'
 import Favorites from './components/Favorites'
-import About from './components/About'
+
 import Bookinfo from './components/Bookinfo'
+import About from './components/about'
 
 
 

@@ -1,354 +1,209 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Footer from "./Footer";
 import Navbar from "./Navbar";
-
+import Footer from "./Footer";
 
 export default function About() {
-  const container = {
-    maxWidth: "1200px",
-    margin: " auto",
-    padding: "20px",
-    color: "black",
-    
-};
+  const wrapper = {
+    paddingTop: "65px",
+    fontFamily: " serif",
+    color: "#f8f6f6ff",
+  };
 
-const sectionTitle = {
-    fontSize: "30px",
+  const hero = {
+    width: "100%",
+    backgroundImage:
+      "url('https://i.pinimg.com/736x/8a/1f/3b/8a1f3b55eb83152b03fb24b352ffbe43.jpg')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    padding: "70px 20px",
+    textAlign: "center",
+    height: "300px",
+  };
+
+
+  const heroTitle = {
+    fontSize: "42px",
+    fontWeight: "700",
     marginBottom: "10px",
-    color: "black",
-    marginTop:"200px",
+    color: "#a82929ff",
   };
 
-  const paragraph = {
-    lineHeight: "1.7",
-    marginBottom: "12px",
+  const heroSubtitle = {
     fontSize: "20px",
-    
+    maxWidth: "700px",
+    margin: "auto",
+    lineHeight: "1.6",
+    color: "#e3e2e2ff",
   };
 
-  const impactTitle = {
-    marginTop: "40px",
-    fontSize: "24px",
+  const section = {
+    maxWidth: "1100px",
+    margin: "auto",
+    padding: "30px 20px",
+    lineHeight: "1.8",
+  };
+
+  const heading = {
+    fontSize: "30px",
+    fontWeight: "600",
+    marginBottom: "15px",
+    color: "#b93c3cff",
+    padding:"20px",
   };
 
   const impactBox = {
-    marginTop: "20px",
-    background: "linear-gradient(90deg, #6613beff, #4987f1ff)",
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
+    gap: "20px",
+    marginTop: "25px",
+  };
+
+  const impactCard = {
+    background:"linear-gradient(90deg, #8d0cefce, #731ba5ff)",
     padding: "25px",
     borderRadius: "15px",
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
-    gap: "15px",
-    color: "white",
+    boxShadow: "0 4px 12px rgba(255, 250, 250, 1)",
     textAlign: "center",
   };
 
-  const impactItemTitle = {
-    fontSize: "28px",
-    marginBottom: "5px",
+  const impactNumber = {
+    fontSize: "34px",
+    color: "#f7f7f7ff",
+    fontWeight: "700",
   };
 
-  const impactItemText = {
-    fontSize: "14px",
-    opacity: "0.9",
+  const impactText = {
+    fontSize: "15px",
+    marginTop: "5px",
+    opacity: 0.8,
   };
 
-  const readingGrid = {
+  const featuresGrid = {
     display: "grid",
     gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
     gap: "25px",
     marginTop: "30px",
-    textAlign: "center",
-    
   };
 
+  const featureCard = {
+    background: "#f7f7ff",
+    padding: "20px",
+    borderRadius: "12px",
+    textAlign: "center",
+    border: "1px solid #ece9ff",
+  };
 
- const readingItem = {
-   padding: "10px",
-   backgroundColor: "#ece6e6ff",
-   border: "10px solid #ece6e6ff",
-   borderRadius: "100px 50px 100px 50px",
- };
-
-  const readingImg = {
-    width: "200px",
-    height: "150px",
-    objectFit: "contain",
+  const featureImg = {
+    width: "160px",
+    height: "130px",
+    objectFit: "cover",
+    borderRadius: "10px",
     marginBottom: "10px",
   };
 
-  const readingItemTitle = {
-    fontSize: "20px",
-    marginBottom: "6px",
-  };
-
-  const readingItemText = {
-    fontSize: "20px",
-    opacity: 0.9,
-    lineHeight: "1.5",
-  };
-
-  const downloadSection = {
-    backgroundColor: "#e8d6ef",
-    padding: "40px 20px",
-    textAlign: "center",
-    marginTop: "50px",
-  };
-
-  const downloadTitle = {
-    fontSize: "32px",
-    marginBottom: "10px",
-  };
-
-  const downloadSubtitle = {
-    fontSize: "20px",
-    lineHeight: 1.6,
-    maxWidth: "800px",
-    margin: "auto",
-    marginBottom: "20px",
-  };
-
-  const downloadBtn = {
-    background: "linear-gradient(90deg, #6a11cb, #2575fc)",
-    border: "none",
-    padding: "12px 25px",
-    color: "white",
-    borderRadius: "25px",
-    fontSize: "20px",
-    cursor: "pointer",
-    marginBottom: "15px",
-  };
-
-  const storeRow = {
-    display: "flex",
-    justifyContent: "center",
-    gap: "15px",
-    marginBottom: "25px",
-  };
-
-  const storeImg = {
-    width: "130px",
-    cursor: "pointer",
-  };
-
-  const imageArea = {
-    position: "relative",
-    display: "flex",
-    justifyContent: "center",
-    marginTop: "20px",
-  };
-
-  const mobileImg = {
-    width: "500px",
-    height: "200px",
-    zIndex: 2,
-  };
-
-  
-
-  const freeBadge = {
-    position: "absolute",
-    left: "20%",
-    top: "65%",
-    background: "#ff1e9c",
-    color: "white",
-    padding: "12px 20px",
-    fontSize: "20px",
-    borderRadius: "50px",
-    transform: "rotate(-10deg)",
-  };
-
-  
   return (
     <>
+      <Navbar />/
 
-    
-      {/* <div className="nav-section">
-        <img
-          className="logo"
-          src="https://www.booktime.org/images/Logo_en.svg"
-          alt=""
-        />
-        <nav className="nav-item1">
-          <Link className="menu" to="/">
-            Home
-          </Link>
-          <Link className="menu" to="/Books">
-            Books
-          </Link>
-          <Link className="menu" to="/Favorites">
-            Favorites
-          </Link>
-          <Link className="menu" to="/About">
-            AboutUs
-          </Link>
-        </nav>
-        <nav className="nav-item2">
-          <input type="text" placeholder="search book" />
-          <button>
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-          <i class="fa-regular fa-user"></i>
-        </nav>
-      </div> */}
-      <Navbar/>
+      <div style={wrapper}>
+        {/* HERO */}
+        <div style={hero}>
+          <h1 style={heroTitle}>About Us</h1>
+          <p style={heroSubtitle}>
+            Discover a universe of stories, knowledge, and imagination. We bring
+            reading to life for every child, student, and book lover.
+          </p>
+        </div>
 
-      <div
-        style={{
-          width: "100%",
-          background: "linear-gradient(90deg, #a39e9eff, #a6c6ffff)",
-          padding: "30px 0",
-          position: "absolute",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          marginTop:"65px",
-          height:"50px",
-        }}
-      >
-        <img
-          src="https://www.booktime.org/images/books/icons/il.png"
-          alt=""
-          style={{
-            position: "absolute",
-            left: "20px",
-            bottom: "-10px",
-            width: "120px",
-            height: "90px",
-            padding: "10px",
-          }}
-        />
+        {/* WHO WE ARE */}
+        <div style={section}>
+          <h2 style={heading}>Who We Are</h2>
+          <p>
+            E-Book World is built for readers who love exploring stories beyond
+            boundaries. From picture books to educational content, we bring a
+            beautiful, easy, and modern reading experience to everyone.
+          </p>
 
-        <h1
-          style={{
-            fontSize: "36px",
-            fontWeight: "500",
-            color: "#333",
-            textAlign: "center",
-          }}
-        >
-          About Us
-        </h1>
+          <p>
+            Since our launch in 2024, we have reached thousands of readers
+            across countries and continue to grow every day.
+          </p>
+        </div>
 
-        <img
-          src="https://www.booktime.org/images/books/icons/ir.png"
-          alt=""
-          style={{
-            position: "absolute",
-            right: "20px",
-            bottom: "0",
-            width: "150px",
-            height: "100px",
-          }}
-        />
-      </div>
+        {/* IMPACT SECTION */}
+        <div style={section}>
+          <h2 style={heading}>Our Global Impact</h2>
 
-      <div style={container}>
-        <h3 style={sectionTitle}>Who We Are</h3>
-
-        <p style={paragraph}>
-          Booktime is a global initiative from the Hindawi Foundation.
-        </p>
-        <p style={paragraph}>
-          Launched in 2024, Booktime has already reached children across
-          continents.
-        </p>
-        <p style={paragraph}>We come with experience since 2008.</p>
-        <p style={paragraph}>
-          Our goal is simple: every child deserves stories that inspire them.
-        </p>
-
-        <h3 style={impactTitle}>Our Impact</h3>
-
-        <div style={impactBox}>
-          <div>
-            <h2 style={impactItemTitle}>+1.2M</h2>
-            <p style={impactItemText}>Children Reading with Booktime</p>
-          </div>
-
-          <div>
-            <h2 style={impactItemTitle}>+5.8M</h2>
-            <p style={impactItemText}>Books Read</p>
-          </div>
-
-          <div>
-            <h2 style={impactItemTitle}>190</h2>
-            <p style={impactItemText}>Countries</p>
-          </div>
-
-          <div>
-            <h2 style={impactItemTitle}>7</h2>
-            <p style={impactItemText}>Languages</p>
+          <div style={impactBox}>
+            <div style={impactCard}>
+              <div style={impactNumber}>1.4M+</div>
+              <p style={impactText}>Active Readers</p>
+            </div>
+            <div style={impactCard}>
+              <div style={impactNumber}>3.2M+</div>
+              <p style={impactText}>E-Books Read</p>
+            </div>
+            <div style={impactCard}>
+              <div style={impactNumber}>120+</div>
+              <p style={impactText}>Countries Reached</p>
+            </div>
+            <div style={impactCard}>
+              <div style={impactNumber}>9</div>
+              <p style={impactText}>Languages Available</p>
+            </div>
           </div>
         </div>
 
-        <h2 style={{ marginTop: "50px", fontSize: "28px", fontWeight: "400" }}>
-          The Power of Reading
-        </h2>
+        {/* FEATURES WITH IMAGES */}
+        <div style={section}>
+          <h2 style={heading}>Why Readers Love Us</h2>
 
-        <p style={paragraph}>Early access to books changes lives.</p>
+          <div style={featuresGrid}>
+            <div style={featureCard}>
+              <img
+                src="https://i.pinimg.com/736x/48/83/65/488365efd52ad5e90b41c7de8bd6c267.jpg"
+                alt="Reading"
+                style={featureImg}
+              />
+              <h3>Boosts Creativity</h3>
+              <p>Beautiful illustrations spark imagination in every child.</p>
+            </div>
 
-        <div style={readingGrid}>
-          <div style={readingItem}>
-            <img
-              src="https://i.pinimg.com/1200x/a8/f3/a5/a8f3a5ff34a3b7ba721fa44d9fa643cc.jpg"
-              style={readingImg}
-              alt=""
-            />
-            <p style={readingItemTitle}>Boosts Brain Development</p>
-            <p style={readingItemText}>Strengthens memory and focus.</p>
-          </div>
+            <div style={featureCard}>
+              <img
+                src="https://i.pinimg.com/736x/2a/e5/da/2ae5da5c43f15af92b76daca2b8939c4.jpg"
+                alt="Success"
+                style={featureImg}
+              />
+              <h3>Improves Learning</h3>
+              <p>Interactive and engaging books enhance understanding.</p>
+            </div>
 
-          <div style={readingItem}>
-            <img
-              src="https://i.pinimg.com/736x/2a/e5/da/2ae5da5c43f15af92b76daca2b8939c4.jpg"
-              style={readingImg}
-              alt=""
-            />
-            <p style={readingItemTitle}>Supercharges School Success</p>
-            <p style={readingItemText}>Early readers perform better.</p>
-          </div>
+            <div style={featureCard}>
+              <img
+                src="https://i.pinimg.com/736x/45/e9/15/45e915f04baf34a7b9474a32fd41bdfc.jpg"
+                alt="Kids Reading"
+                style={featureImg}
+              />
+              <h3>Encourages Reading Habits</h3>
+              <p>Easy-to-use design makes reading fun.</p>
+            </div>
 
-          <div style={readingItem}>
-            <img
-              src="https://i.pinimg.com/736x/48/83/65/488365efd52ad5e90b41c7de8bd6c267.jpg"
-              style={readingImg}
-              alt=""
-            />
-            <p style={readingItemTitle}>Sparks Creativity</p>
-            <p style={readingItemText}>Encourages imagination.</p>
-          </div>
-
-          <div style={readingItem}>
-            <img
-              src="https://i.pinimg.com/736x/45/e9/15/45e915f04baf34a7b9474a32fd41bdfc.jpg"
-              style={readingImg}
-              alt=""
-            />
-            <p style={readingItemTitle}>Supports Language Growth</p>
-            <p style={readingItemText}>Improves vocabulary.</p>
+            <div style={featureCard}>
+              <img
+                src="https://i.pinimg.com/736x/48/09/7b/48097b54441177e12164f3de0f6ba4ad.jpg"
+                alt="Ebooks"
+                style={featureImg}
+              />
+              <h3>Huge Book Collection</h3>
+              <p>Thousands of books categorized for every age group.</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div style={downloadSection}>
-        <h1 style={downloadTitle}>Download Booktime</h1>
-
-        <p style={downloadSubtitle}>
-          Let your children discover the joy of reading…
-        </p>
-
-        <button style={downloadBtn}>Download the App</button>
-
-        <div style={storeRow}>
-          <img src="appstore" alt="App Store" style={storeImg} />
-          <img src="playstore" alt="Play Store" style={storeImg} />
-        </div>
-
-        
-      </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

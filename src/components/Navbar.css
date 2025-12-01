@@ -1,7 +1,7 @@
 *{
   margin: 0px;
   padding: 0px;
-   color: black;
+  color: black;
 }
 
 .nav-section{
@@ -9,9 +9,9 @@
   justify-content: space-between;
   box-shadow: 1px 1px 1px ;
   backdrop-filter: blur(78px);
-background-color: white;
- width: 100%;
- position: fixed;
+  background-color: white;
+  width: 100%;
+  position: fixed;
 
  
 }

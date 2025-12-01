@@ -1,0 +1,62 @@
+.footer {
+  background: #f1efef;
+  color: #b3b0b0;
+  padding: 20px 20px;
+  text-align: center;
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo-img {
+  width: 150px;
+}
+
+
+.footer-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin: 20px 0;
+  font-size: 15px;
+}
+
+.footer-menu li {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-menu li:hover {
+  color: #a72cab; /* soft green hover like the screenshot */
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.footer-social a {
+  color: #f4f3f3;
+  border: 1px solid #a72cab;
+  padding: 8px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  background-color: #a72cab;
+  color: #0d0d0d;
+}
+
+.footer-copy {
+  margin-top: 25px;
+  font-size: 14px;
+  opacity: 0.6;
+}
