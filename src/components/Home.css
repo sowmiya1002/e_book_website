@@ -29,11 +29,12 @@ h1{
   text-align: center;
   font-size: 40px;
 }
-p{
+
+.hero-section p{
    margin-top: 40px;
   color: rgb(0, 0, 0);
   text-align: center;
-  font-size: 30; 
+  font-size: 20px; 
 }
 .hero-section button{
  margin-top: 40px;
@@ -41,6 +42,13 @@ p{
  background-color: blueviolet;
  width: 100px;
  height: 30px;
+ border: solid black;
+    border-radius: 10px;
+}
+.hero-section button:hover{
+ color: blueviolet;
+    border: solid blueviolet ;
+    background-color: transparent;
 }
 .card-img{
   width: 500px;
@@ -103,12 +111,13 @@ p{
 /* Heading + View all button */
 .book-heading {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
     margin-bottom: 60px;
     margin-top: 50px;
 
-
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .book-heading h3 {
@@ -117,10 +126,12 @@ p{
 }
 
 .view-all {
-  font-size: 18px;
+  font-size: 10px;
   color: #7a2fff;
   text-decoration: none;
   font-weight: 500;
+ 
+  
 }
 .view-all:hover { text-decoration: underline; }
 
@@ -177,18 +188,31 @@ h2{
   /* object-fit: cover; */
     /* background-size: contain; */
 background-position: center;
-  background-attachment: fixed; 
+  /* background-attachment: fixed;  */
   background-repeat: no-repeat;
-  margin-top: 30px;
+  margin-top: 40px;
 
- padding-top: 50px; 
+ padding-top: 60px; 
 
  border: solid black;
 }
 
 .down-content h1{
-  margin: 0px;
+  margin: 10px;
+  
 }
 .down-content p{
   font-size: 20px;
+  text-align: center;
+}
+
+ .down-content .app{
+  display: flex;
+ justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+.app img{
+  width: 150px;
+  height: 40px;
 }

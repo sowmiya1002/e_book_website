@@ -1,24 +1,63 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import Footer from './Footer'
+import Navbar from './Navbar'
 function Favorites() {
   return (
     <>
-       <div className='nav-section'>
-            <img className='logo' src="https://www.booktime.org/images/Logo_en.svg" alt="" />
-          <nav className='nav-item1'>
-           <Link className='menu' to="/">Home</Link>
-                  <Link className='menu' to="/Books">Books</Link>
-                  <Link className='menu' to="/Favorites">Favorites</Link>
-                  <Link className='menu' to="/About">AboutUs</Link>
-          </nav>
-         <nav className='nav-item2'>
-            <input type="text"placeholder='search book' />
-            <button>
-              <i class="fa-solid fa-magnifying-glass"></i></button>
-             <i class="fa-regular fa-user"></i>
-         </nav>
-        </div>
-          <h4>empty</h4>
+     
+
+        <Navbar/>
+          <div className='book-heading'
+        style={{
+          width: "100%",
+          background: "linear-gradient(90deg, #a39e9eff, #b3c9dfff)",
+          padding: "30px 0",
+          position: "absolute",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          // marginTop:"65px",
+          height:"50px",
+        }}
+      >
+        <img
+          src="https://www.booktime.org/images/books/icons/il.png"
+          alt=""
+          style={{
+            position: "absolute",
+            left: "20px",
+            bottom: "-10px",
+            width: "120px",
+            height: "90px",
+            padding: "10px",
+          }}
+        />
+
+        <h2
+          style={{
+            fontSize: "36px",
+            fontWeight: "500",
+            color: "#333",
+            textAlign: "center",
+          }}>Favorites </h2>
+
+        <img
+          src="https://www.booktime.org/images/books/icons/ir.png"
+          alt=""
+          style={{
+            position: "absolute",
+            right: "20px",
+            bottom: "0",
+            width: "150px",
+            height: "100px",
+          }}
+        />
+      </div>
+
+          
+          
+          <Footer/>
     </>
   )
 }

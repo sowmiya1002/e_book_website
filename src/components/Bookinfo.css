@@ -12,4 +12,52 @@ margin: auto;
 padding-top: 50px;
 }
 
+.book-details p{
+  text-align: start;
+ width: 550px;
+ margin-top: 20px;
+}
 
+h3{  font-size: xx-large;
+    margin-top: 0px;
+   
+}
+.book-btn{
+    display: flex;
+  gap: 60px;
+  margin-top: 40px;
+
+}
+
+.book-btn button{
+    width: 100px;
+    height: 30px;
+    background-color: blueviolet;
+    color: white;
+    border: solid black;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.book-btn button:hover{
+    color: blueviolet;
+    border: solid blueviolet ;
+    background-color: transparent;
+}
+.b-para{
+   margin-top: 30px;
+    font-size: larger ;
+}
+h5{
+     color: blueviolet;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.by{
+    font-weight: bold;
+    font-size: larger;
+}
+h2 {
+     font-size: xx-large;
+    text-align: center;
+    padding-top: 90px;
+}

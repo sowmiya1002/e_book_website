@@ -1,4 +1,4 @@
-const books=[
+ const books=[
     {
     id: 1,
     name: "Hello Red Sea!",
@@ -119,3 +119,4 @@ const books=[
 },
 
 ]
+export default books;

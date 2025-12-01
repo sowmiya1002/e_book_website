@@ -1,9 +1,9 @@
 *{
   margin: 0px;
-  padding: 0px;
+  /* padding: 0px; */
 }
 
-.nav-section{
+/* .nav-section{
   display: flex;
   justify-content: space-between;
   box-shadow: 2px 3px 1px 2px ;
@@ -37,7 +37,7 @@ gap: 30px;
 input{
  width: 300px;
  margin-right: 10px;
-}
+} */
 
  .book-section {
   width: 100%;
@@ -67,15 +67,18 @@ input{
 .view-all:hover { text-decoration: underline; }
 
 /* Main Flex Container like the image */
-.book-container {
+.books-container {
   display: flex;
- grid-template-columns: repeat(4, 1fr);
-   grid-template-rows: repeat(2, 1fr);
+ /* grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+   */
   gap: 28px;
   overflow-x: auto;
   padding-bottom: 10px;
   scroll-behavior: smooth;
  justify-content: space-evenly;
+ padding-top: 200px;
+ 
 }
 
 /* Book Card Style */
@@ -108,7 +111,7 @@ input{
   margin-top: 10px;
   color: #000;
 }
-h2 {
+.book-heading h2 {
     text-align: center;
-    padding-top: 80px;
+        padding-top: 15px;
 }

@@ -1,0 +1,147 @@
+*{
+  margin: 0px;
+  padding: 0px;
+   color: black;
+}
+
+.nav-section{
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 1px 1px 1px ;
+  backdrop-filter: blur(78px);
+background-color: white;
+ width: 100%;
+ position: fixed;
+
+ 
+}
+
+
+.logo{
+  width: 150px;
+  height: 60px;
+}
+.nav-item1{
+
+ margin-top: 20px;
+display: flex;
+flex-direction: row;
+gap: 30px;
+
+}
+
+nav .menu {
+  position: relative;
+  text-decoration: none;
+ 
+  padding-bottom: 5px;
+}
+
+ nav .menu::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 1px;         
+  transform: translateX(-50%);
+  width: 0;
+  height: 3px;
+  background-color: #b965ff;
+  border-radius: 2px;
+  transition: 0.3s ease;
+  
+  
+}
+
+.menu:hover::after,
+.menu.active::after {
+  width: 60px;   
+     
+}
+.nav-item1 .menu:hover{
+   color: #b965ff;  
+}
+
+.nav-item2{
+  
+  margin-top: 20px;
+gap: 30px;
+}
+input{
+ width: 300px;
+ height: 20px;
+ margin-right: 20px;
+ border-radius: 10px;
+ border: solid blueviolet;
+}
+
+.hamburger{
+  display:none;
+}
+
+@media(max-width:768px){
+
+  .hamburger{
+    display:block;
+    font-size:28px;
+    cursor:pointer;
+    margin-top:10px;
+  }
+
+  .nav-section .nav-item1{
+    display:none;
+    flex-direction:column;
+    position:absolute;
+    top:70px;
+    right:20px;
+    background:white;
+    padding:15px;
+    gap:20px;
+    border-radius:10px;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.15);
+    z-index:100;
+  }
+
+  .nav-item1.active{
+    display:flex;   
+  }
+
+ 
+  input{
+    width: 180px;
+  }
+}
+@media (max-width:425px){
+  .nav-section{ padding: 0px; }
+  .logo{ width:95px; height:40px; }
+
+  .nav-item1{
+    display:none;
+    flex-direction: column;
+    position:absolute;
+    top:10px;
+    right:5px;
+    width:100px;
+    padding:10px;
+    gap:14px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.25);
+  }
+  .nav-item2 {
+    margin-top: 10px;
+    gap: 30px;
+}
+  .nav-item1.active{ display:flex; }
+
+  .hamburger{ display:block; font-size:26px; margin-top:0px; }
+
+ 
+  .nav-item2 button{ font-size:12px; padding:3px 6px; }
+
+      .nav-item2 input {
+        width: 100px;
+        height: 20px;
+        font-size: 12px;
+    }
+}
+
