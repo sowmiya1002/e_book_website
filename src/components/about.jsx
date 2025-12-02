@@ -13,7 +13,7 @@ export default function About() {
   const hero = {
     width: "100%",
     backgroundImage:
-      "url('https://i.pinimg.com/736x/8a/1f/3b/8a1f3b55eb83152b03fb24b352ffbe43.jpg')",
+      "url('https://i.pinimg.com/1200x/87/56/97/87569739fb23ca9a06e7ba1d2063ea25.jpg')",
     backgroundSize: "cover",
     backgroundPosition: "center",
     padding: "70px 20px",
@@ -26,7 +26,7 @@ export default function About() {
     fontSize: "42px",
     fontWeight: "700",
     marginBottom: "10px",
-    color: "#a82929ff",
+    color: "#9729a8ff",
   };
 
   const heroSubtitle = {
@@ -48,7 +48,7 @@ export default function About() {
     fontSize: "30px",
     fontWeight: "600",
     marginBottom: "15px",
-    color: "#b93c3cff",
+    color: "#c6139aff",
     padding:"20px",
   };
 
@@ -105,7 +105,6 @@ export default function About() {
   return (
     <>
       <Navbar />/
-
       <div style={wrapper}>
         {/* HERO */}
         <div style={hero}>
@@ -192,7 +191,7 @@ export default function About() {
 
             <div style={featureCard}>
               <img
-                src="https://i.pinimg.com/736x/48/09/7b/48097b54441177e12164f3de0f6ba4ad.jpg"
+                src="https://i.pinimg.com/1200x/ae/67/d9/ae67d90331791ac5f705ed34d37f81ec.jpg"
                 alt="Ebooks"
                 style={featureImg}
               />
@@ -202,7 +201,6 @@ export default function About() {
           </div>
         </div>
       </div>
-
       <Footer />
     </>
   );
